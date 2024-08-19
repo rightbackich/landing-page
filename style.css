@@ -28,6 +28,11 @@ h2 {
   font-size: 48px;
 }
 
+h3 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
 button {
   background-color: var(--color-button);
   color: var(--color-light-);
@@ -46,9 +51,13 @@ button {
 
 .header {
   background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.header,
+.info-section {
   display: flex;
   justify-content: center;
-  color: var(--color-light);
   padding-top: 30px;
 }
 
@@ -85,7 +94,27 @@ button {
   font-size: 18px;
 }
 
-.image{
+.image {
   width: 500px;
   height: auto;
+}
+
+.info-section .image {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.info-section {
+  text-align: center;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 70px 0;
+}
+
+.info-card {
+  flex-basis: 200px;
 }
